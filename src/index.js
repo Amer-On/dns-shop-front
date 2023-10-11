@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import {createStore} from 'redux';
+import {configureStore} from '@reduxjs/toolkit'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Provider} from "react-redux";
 import reducer from "./reducer";
@@ -9,7 +9,7 @@ import reducer from "./reducer";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 document.body.style.overflow = "hidden"
 
-const store = createStore(reducer)
+const store = configureStore({reducer: reducer})
 
 root.render(
     <Provider store={store}>
