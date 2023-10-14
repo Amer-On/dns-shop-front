@@ -10,7 +10,7 @@ export default function Header() {
                 <img className='logo' src={logo} alt='logo'/>
                 <h1 className='title'>DNS Цифровая и бытовая техника</h1>
                 <Link to='/login' className='login-button-wrapper'>
-                    <button className='login-button'>Авторизоваться</button>
+                    <button className='btn'>Авторизоваться</button>
                 </Link>
             </div>
         </header>
