@@ -1,0 +1,15 @@
+.login-form {
+    background-color: #FE9611;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 1em;
+}
+
+
+.login-form input {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*	color: #FE9611;*/
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
