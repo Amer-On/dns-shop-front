@@ -20,7 +20,11 @@ root.render(
                 <Routes>
                     <Route element={<App/>}>
                         <Route path='/' element={<Home/>}/>
-                        <Route path='/login' element={<p>login form</p>}></Route>
+                        <Route path='/login' element={<p>login form</p>}/>
+                        <Route path='/stock' element={<p>none</p>}/>
+                        <Route path='/shops' element={<p>none</p>}/>
+                        <Route path='/for_customers' element={<p>none</p>}/>
+                        <Route path='/contacts' element={<p>none</p>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>

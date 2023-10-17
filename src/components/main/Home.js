@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <nav>
             <div className='nav-content'>
-                <Link to='/actions'>Акции</Link>
+                <Link to='/stock'>Акции</Link>
                 <Link to='/shops'>Магазины</Link>
                 <Link to='/for_customers'>Покупателям</Link>
                 <Link to='/contacts'>Контакты</Link>
