@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Provider} from "react-redux";
 import reducer from "./reducer";
 import 'styles/index.css'
+import Home from "./components/main/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 document.body.style.overflow = "hidden"
@@ -18,7 +19,7 @@ root.render(
             <BrowserRouter>
                 <Routes>
                     <Route element={<App/>}>
-                        <Route path='/' element={<p>content</p>}/>
+                        <Route path='/' element={<Home/>}/>
                         <Route path='/login' element={<p>login form</p>}></Route>
                     </Route>
                 </Routes>

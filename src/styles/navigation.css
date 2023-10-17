@@ -1,0 +1,81 @@
+nav {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 1em 5em 0 5em;
+    background-color: #FE9611;
+    padding: 1em 0 1em 0;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav a:hover,
+nav a:focus {
+    color: #FE9611;
+    text-shadow: -1px 1px 2px white,
+    -1px -1px 2px white,
+    1px 1px 2px white,
+    1px -1px 2px white;
+}
+
+.search input {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 1em;
+}
+
+.search {
+    display: flex;
+    gap: 1em;
+}
+
+
+.search-btn {
+    min-height: 1em;
+}
+
+
+.search-btn {
+    background-color: white;
+    color: #FE9611;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+}
+
+.search-btn:hover {
+    color: #FFF;
+    background-color: #FE9611;
+    box-shadow: #FFF 0 3px 8px;
+}
