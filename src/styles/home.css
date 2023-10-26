@@ -1,0 +1,45 @@
+.main-content-wrapper {
+    background: transparent;
+    display: grid;
+    grid-template-columns: 15% 65% 15%;
+    margin: 2em 5em 2em 5em;
+    justify-content: space-between;
+}
+
+.body-item {
+    padding: 2em 1em 2em 1em;
+    background-color: #FE9611;
+}
+
+.body {
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #FE9611;
+    border-width: 1em;
+    padding: 1em;
+    background: white;
+}
+
+.assortment {
+    /*padding-top: 3em;*/
+    /*padding-bottom: 3em;*/
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 1em 1em 1em 1em;
+    /*border-radius: 1em 1em 1em 5em;*/
+}
+
+a.assortment-item {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.advertisement {
+    border-radius: 1em 1em 1em 1em;
+}
+

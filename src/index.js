@@ -6,10 +6,9 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Provider} from "react-redux";
 import reducer from "./reducer";
 import 'styles/index.css'
-import Home from "./components/main/Home";
+import Home from "./components/main/home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-document.body.style.overflow = "hidden"
 
 const store = configureStore({reducer: reducer})
 

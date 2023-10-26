@@ -5,7 +5,8 @@ nav {
     padding: 1em 0 1em 0;
     box-sizing: border-box;
     border-style: none;
-    border-radius: 1em;
+    /*border-radius: 1em 1em 5em 5em;*/
+    border-radius: 5em 5em 1em 1em;
 }
 
 nav a {

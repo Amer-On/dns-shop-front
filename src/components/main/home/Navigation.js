@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import 'styles/navigation.css'
 
-export default function Home() {
+export default function Navigation() {
     return (
         <nav>
             <div className='nav-content'>
