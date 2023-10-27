@@ -12,7 +12,6 @@ import video from "./static/bg.mp4";
 import Feedback from "./components/main/Feedback";
 import Catalog from "./components/main/catalog/Catalog";
 import Shops from "./components/main/shops/Shops";
-import CatalogItem from "./components/main/catalog/CatalogItem";
 import Product from "./components/main/Product";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,13 +27,17 @@ root.render(
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/catalog' element={<Catalog/>}/>
+                    <Route path='/catalog' element={<Catalog ids={[0, 1, 2, 3, 4, 5]} title='Каталог'/>}/>
                     <Route path='/shops' element={<Shops/>}/>
                     <Route path='/feedback' element={<Feedback/>}/>
                     <Route path='/contacts' element={<p>none</p>}/>
                     <Route path='/login' element={<Authorization/>}/>
                     <Route path='/signup' element={<Registration/>}/>
                     <Route path="/catalog/items/:id" element={<Product/>} />
+                    <Route path="/catalog/tech/" element={<Catalog ids={[0, 3]} title='Бытовая техника'/>} />
+                    <Route path="/catalog/beauty/" element={<Catalog ids={[]} title='Красота и здоровье'/>} />
+                    <Route path="/catalog/smart/" element={<Catalog ids={[4]} title='Смартфоны и техника'/>} />
+                    <Route path="/catalog/pc/" element={<Catalog ids={[1, 2, 5]} title='Смартфоны и техника'/>} />
                 </Routes>
             </BrowserRouter>
         </Provider>

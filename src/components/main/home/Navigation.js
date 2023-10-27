@@ -8,7 +8,7 @@ export default function Navigation() {
                 <Link to='/catalog'>Каталог</Link>
                 <Link to='/shops'>Магазины</Link>
                 <Link to='/feedback'>Обратная связь</Link>
-                <Link to='/contacts'>Контакты</Link>
+                {/*<Link to='/contacts'>Контакты</Link>*/}
                 <div className='search'>
                     <input type="text" placeholder="Поиск по сайту"/>
                     <button className='search-btn'>Поиск</button>
