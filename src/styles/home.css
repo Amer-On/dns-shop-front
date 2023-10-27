@@ -1,7 +1,7 @@
 .main-content-wrapper {
     background: transparent;
     display: grid;
-    grid-template-columns: 13% 65% 13%;
+    grid-template-columns: 15% 65% 15%;
     margin: 3em 5em 2em 5em;
     justify-content: space-between;
 }
@@ -13,7 +13,6 @@
 }
 
 .body {
-    /*box-shadow: 0 0 0 1em #FE9611;*/
     border-radius: 1em;
     border-style: solid;
     border-color: #FE9611;
