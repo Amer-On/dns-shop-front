@@ -18,7 +18,7 @@ const Authorization = () => {
                 <label htmlFor="password">Пароль</label>
                 <input type="password" placeholder="Пароль" id="password"/>
 
-                <button type='submit' form='auth-form' className='login-button'>Войти</button>
+                <button type='submit' form='auth-form'>Войти</button>
             </form>
         </div>
     );

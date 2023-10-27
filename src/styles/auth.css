@@ -5,7 +5,7 @@
 }
 
 
-form{
+form#auth-form{
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -16,14 +16,14 @@ form{
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 }
-form *{
+form#auth-form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
-form h3{
+form#auth-form h3{
     text-shadow: -1px 1px 0 #f96407,
     1px -1px 0 #76C4C8;
     color: #FE9611;
@@ -33,13 +33,13 @@ form h3{
     text-align: center;
 }
 
-label{
+form#auth-form label{
     display: block;
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
 }
-input{
+form#auth-form input{
     display: block;
     box-sizing: border-box;
     height: 50px;
@@ -51,10 +51,10 @@ input{
     font-size: 14px;
     font-weight: 300;
 }
-::placeholder{
+form#auth-form ::placeholder{
     color: #e5e5e5;
 }
-button.login-button {
+form#auth-form button {
     margin-top: 50px;
     margin-bottom: 35px;
     width: 100%;
