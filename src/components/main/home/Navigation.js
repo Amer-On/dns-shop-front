@@ -5,7 +5,7 @@ export default function Navigation() {
     return (
         <nav>
             <div className='nav-content'>
-                <Link to='/stock'>Акции</Link>
+                <Link to='/catalog'>Каталог</Link>
                 <Link to='/shops'>Магазины</Link>
                 <Link to='/feedback'>Обратная связь</Link>
                 <Link to='/contacts'>Контакты</Link>
