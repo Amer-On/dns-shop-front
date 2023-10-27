@@ -7,7 +7,7 @@ export default function Navigation() {
             <div className='nav-content'>
                 <Link to='/stock'>Акции</Link>
                 <Link to='/shops'>Магазины</Link>
-                <Link to='/for_customers'>Покупателям</Link>
+                <Link to='/feedback'>Обратная связь</Link>
                 <Link to='/contacts'>Контакты</Link>
                 <div className='search'>
                     <input type="text" placeholder="Поиск по сайту"/>

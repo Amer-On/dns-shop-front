@@ -8,8 +8,11 @@ import App from "../../../App";
 
 
 export default function Home() {
+    const headerProps = {
+        auth: false
+    }
     return (
-        <App>
+        <App headerProps={headerProps}>
             <Navigation/>
             <div className='main-content-wrapper'>
                 <AssortmentSideNavigation/>

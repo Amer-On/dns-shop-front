@@ -8,8 +8,12 @@ const Registration = () => {
         console.log('ON SUBMIT');
     }
 
+    const headerProps = {
+        auth: false
+    }
+
     return (
-        <App>
+        <App headerProps={headerProps}>
             <div className='login-form'>
                 <form id='auth-form' onSubmit={onSubmit}>
                     <h3>Регистрация</h3>

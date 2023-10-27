@@ -9,6 +9,7 @@ import Home from "./components/main/home/Home";
 import Authorization from "./components/main/Authorization";
 import Registration from "./components/main/Registration";
 import video from "./static/bg.mp4";
+import Feedback from "./components/main/Feedback";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -25,7 +26,7 @@ root.render(
                     <Route path='/' element={<Home/>}/>
                     <Route path='/stock' element={<p>none</p>}/>
                     <Route path='/shops' element={<p>none</p>}/>
-                    <Route path='/for_customers' element={<p>none</p>}/>
+                    <Route path='/feedback' element={<Feedback/>}/>
                     <Route path='/contacts' element={<p>none</p>}/>
                     <Route path='/login' element={<Authorization/>}/>
                     <Route path='/signup' element={<Registration/>}/>

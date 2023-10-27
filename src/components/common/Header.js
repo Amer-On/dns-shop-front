@@ -14,11 +14,14 @@ export default function Header(props) {
                 {props.auth ?
                     <Link to='/signup' className='login-button-wrapper'>
                         <button className='btn'>Регистрация</button>
-                    </Link>
-                    :
-                    <Link to='/login' className='login-button-wrapper'>
-                        <button className='btn'>Авторизация</button>
-                    </Link>
+                    </Link> :
+                    (
+                        props.auth === false ?
+                            <Link to='/login' className='login-button-wrapper'>
+                                <button className='btn'>Авторизация</button>
+                            </Link>
+                            : <span className='login-button-wrapper'/>
+                    )
                 }
             </div>
         </header>
