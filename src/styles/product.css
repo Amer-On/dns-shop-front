@@ -1,0 +1,83 @@
+.general-product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 5em;
+}
+
+
+.general-product-description {
+    display: flex;
+    flex-direction: column;
+}
+
+img.product-image {
+    box-shadow: 0 0 1em 0 #76C4C8;
+    height: 20em;
+    width: 20em;
+}
+
+.product-description {
+    text-indent: 2em;
+    font-size: 20px;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.product-price-wrapper {
+    border-radius: 1em;
+    padding: 2em;
+    background-color: white;
+    display: flex;
+    gap: 5em;
+}
+
+.product-btn {
+    padding: 1em 3em 1em 3em;
+    /*padding-left: 3em;*/
+    /*padding-right: 3em;*/
+}
+
+.product-name {
+    padding: 0;
+    margin: 0;
+}
+
+.product-summary {
+    font-size: 18px;
+}
+
+
+.product-places p {
+
+}
+
+.product-price {
+    font-family: "Great Vibes", cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.product-places {
+    box-shadow: 0 0 0 4px #76C4C8;
+    padding: 1em;
+    width: 15em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.product-places ul {
+    list-style-type: circle;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.product-places a {
+    text-decoration: underline;
+    color: black;
+}
