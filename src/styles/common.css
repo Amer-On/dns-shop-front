@@ -98,3 +98,19 @@
     cursor: default;
     opacity: .24;
 }
+
+.body-content-wrapper {
+    padding: 2em;
+    margin: 4em 6em 3em 6em;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 1em #FE9611;
+    border-radius: 1em;
+}
+
+.title {
+    margin: auto;
+    color: #FE9611;
+    font-size: 3em;
+    text-shadow: -1px 1px 0 #f96407,
+    1px -1px 0 #76C4C8;
+}

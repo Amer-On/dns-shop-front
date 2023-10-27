@@ -11,6 +11,7 @@ import Registration from "./components/main/Registration";
 import video from "./static/bg.mp4";
 import Feedback from "./components/main/Feedback";
 import Catalog from "./components/main/catalog/Catalog";
+import Shops from "./components/main/shops/Shops";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,7 +27,7 @@ root.render(
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route path='/catalog' element={<Catalog/>}/>
-                    <Route path='/shops' element={<p>none</p>}/>
+                    <Route path='/shops' element={<Shops/>}/>
                     <Route path='/feedback' element={<Feedback/>}/>
                     <Route path='/contacts' element={<p>none</p>}/>
                     <Route path='/login' element={<Authorization/>}/>

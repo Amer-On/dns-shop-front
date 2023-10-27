@@ -18,11 +18,3 @@ img.logo {
 .login-button-wrapper {
     margin-left: auto;
 }
-
-h1.title {
-    margin: auto;
-    color: #FE9611;
-    font-size: 3em;
-    text-shadow: -1px 1px 0 #f96407,
-    1px -1px 0 #76C4C8;
-}
