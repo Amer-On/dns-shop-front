@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import reducer from "./reducer";
 import 'styles/index.css'
 import Home from "./components/main/home/Home";
+import Authorization from "./components/main/Authorization";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,7 +20,7 @@ root.render(
                 <Routes>
                     <Route element={<App/>}>
                         <Route path='/' element={<Home/>}/>
-                        <Route path='/login' element={<p>login form</p>}/>
+                        <Route path='/login' element={<Authorization/>}/>
                         <Route path='/stock' element={<p>none</p>}/>
                         <Route path='/shops' element={<p>none</p>}/>
                         <Route path='/for_customers' element={<p>none</p>}/>
