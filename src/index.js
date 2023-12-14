@@ -38,6 +38,7 @@ root.render(
                     <Route path="/catalog/beauty/" element={<Catalog cat='beauty' ids={[]} title='Красота и здоровье'/>} />
                     <Route path="/catalog/smart/" element={<Catalog cat='smart' ids={[4]} title='Смартфоны и техника'/>} />
                     <Route path="/catalog/pc/" element={<Catalog cat='pc' ids={[1, 2, 5]} title='Пк, ноутбуки и периферия'/>} />
+                    <Route path="/catalog/search/:query" element={<Catalog title='Поиск' cat='search'/>} />
                 </Routes>
             </BrowserRouter>
         </Provider>
