@@ -18,11 +18,16 @@ form#auth-form{
 }
 form#auth-form *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
+    /*color: #ffffff;*/
     letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
+
+form#auth-form label {
+    color: white;
+}
+
 form#auth-form h3{
     text-shadow: -1px 1px 0 #f96407,
     1px -1px 0 #76C4C8;

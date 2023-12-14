@@ -34,10 +34,10 @@ root.render(
                     <Route path='/login' element={<Authorization/>}/>
                     <Route path='/signup' element={<Registration/>}/>
                     <Route path="/catalog/items/:id" element={<Product/>} />
-                    <Route path="/catalog/tech/" element={<Catalog ids={[0, 3]} title='Бытовая техника'/>} />
-                    <Route path="/catalog/beauty/" element={<Catalog ids={[]} title='Красота и здоровье'/>} />
-                    <Route path="/catalog/smart/" element={<Catalog ids={[4]} title='Смартфоны и техника'/>} />
-                    <Route path="/catalog/pc/" element={<Catalog ids={[1, 2, 5]} title='Смартфоны и техника'/>} />
+                    <Route path="/catalog/tech/" element={<Catalog cat='tech' ids={[0, 3]} title='Бытовая техника'/>} />
+                    <Route path="/catalog/beauty/" element={<Catalog cat='beauty' ids={[]} title='Красота и здоровье'/>} />
+                    <Route path="/catalog/smart/" element={<Catalog cat='smart' ids={[4]} title='Смартфоны и техника'/>} />
+                    <Route path="/catalog/pc/" element={<Catalog cat='pc' ids={[1, 2, 5]} title='Пк, ноутбуки и периферия'/>} />
                 </Routes>
             </BrowserRouter>
         </Provider>

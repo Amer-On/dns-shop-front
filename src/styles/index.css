@@ -30,3 +30,10 @@ code {
   bottom: 0;
   z-index: -1;
 }
+
+.error {
+  color: #FE9611;
+  text-shadow: red 1px 0 1em;
+  text-align: center;
+  margin: 1em 0 1em 0;
+}

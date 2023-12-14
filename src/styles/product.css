@@ -40,6 +40,8 @@ img.product-image {
 }
 
 .product-name {
+    text-align: justify;
+    font-size: 2em;
     padding: 0;
     margin: 0;
 }
