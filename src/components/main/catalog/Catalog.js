@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import 'styles/catalog.css'
+import 'styles/slider.css'
 import CatalogItem from "./CatalogItem";
 import App from "../../../App";
 import Navigation from "../home/Navigation";

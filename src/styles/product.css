@@ -7,11 +7,12 @@
 
 
 .general-product-description {
+    margin: 1em;
     display: flex;
     flex-direction: column;
 }
 
-img.product-image {
+.product-image {
     box-shadow: 0 0 1em 0 #76C4C8;
     height: 20em;
     width: 20em;

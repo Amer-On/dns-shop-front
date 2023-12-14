@@ -4,6 +4,7 @@ import App from "../../App";
 import Navigation from "./home/Navigation";
 import 'styles/product.css'
 import axios from "axios";
+import CustomSlider from "./Slider";
 
 const Product = () => {
     const {id} = useParams();
@@ -24,7 +25,7 @@ const Product = () => {
                 <Navigation/>
                 <div className='body-content-wrapper item-wrapper'>
                     <div className='general-product-info'>
-                        <img src={data.images[0]} alt={data.images[0]} className='product-image'/>
+                        <CustomSlider images={data.images} className='product-image'/>
                         <div className='general-product-description'>
                             <h1 className='title product-name'>{data.name}</h1>
                             <p className='product-summary'>{data.summary}</p>
