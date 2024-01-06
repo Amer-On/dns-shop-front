@@ -46,7 +46,7 @@ const Registration = () => {
                     <label htmlFor="confirm_password">Подтвердите пароль</label>
                     <input type="password" placeholder="Тоже пароль" id="confirm_password"/>
 
-                    <button type='submit' form='auth-form'>Войти</button>
+                    <button type='submit' form='auth-form'>Зарегистрироваться</button>
                 </form>
             </div>
         </App>
