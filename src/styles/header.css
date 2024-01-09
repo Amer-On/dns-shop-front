@@ -18,3 +18,24 @@ img.logo {
 .login-button-wrapper {
     margin-left: auto;
 }
+
+
+.cart {
+    cursor: pointer;
+    position: relative;
+    margin-right: 2em;
+}
+
+.cart p {
+    top: -1em;
+    left: 0;
+    color: white;
+    text-shadow: red 1em 1em 1em;
+    position: absolute;
+}
+
+.cart img {
+    /*background-color: #FE9611;*/
+    height: 3em;
+    width: 3em;
+}
