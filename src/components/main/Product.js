@@ -5,6 +5,7 @@ import Navigation from "./home/Navigation";
 import 'styles/product.css'
 import axios from "axios";
 import CustomSlider from "./Slider";
+import {HOST} from '../../constants'
 
 const Product = () => {
     const {id} = useParams();
@@ -12,7 +13,7 @@ const Product = () => {
     const [data, setData] = useState()
     useEffect(() => {
         var res;
-        res = axios.get('http://localhost:8000/api/v1/products/' + id)
+        res = axios.get(HOST + '/api/v1/products/' + id)
         res.then(
             (r) => setData(r.data)
         ).catch(

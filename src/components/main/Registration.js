@@ -3,6 +3,7 @@ import React from 'react';
 import App from "../../App";
 import axios from "axios";
 import {toast} from "react-toastify";
+import {HOST} from '../../constants'
 
 const Registration = () => {
     function onSubmit(e) {
@@ -11,7 +12,7 @@ const Registration = () => {
             login: e.target.username.value,
             password: e.target.password.value
         }
-        axios.post('http://localhost:8000/api/v1/register/', data).then(
+        axios.post(HOST + '/api/v1/register/', data).then(
             (r) => {
                 toast.success('Пользователь успешно создан, можете авторизоваться!')
             }

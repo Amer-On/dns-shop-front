@@ -5,6 +5,7 @@ import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
 import {toast} from "react-toastify";
 import {Navigate, useNavigate} from "react-router-dom";
+import {HOST} from '../../constants'
 
 
 const Authorization = () => {
@@ -18,7 +19,7 @@ const Authorization = () => {
             login: e.target.username.value,
             password: e.target.password.value
         }
-        axios.post('http://localhost:8000/api/v1/login/', data).then(
+        axios.post(HOST + '/api/v1/login/', data).then(
             (r) => {
                 dispatch({type: "LOG_IN", login: data.login})
                 navigate('/')

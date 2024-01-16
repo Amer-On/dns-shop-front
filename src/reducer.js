@@ -36,8 +36,10 @@ export default function reducer(state = defaultState, action) {
             return {...state, auth: false, login: null}
         case "BUY_ITEM":
             newCart = cloneDeep(state.cart)
-            newCart[action.item.id] = action.item
-            console.log(newCart)
+            if (action.item.id in newCart)
+                newCart[action.item.id].amount += 1
+            else
+                newCart[action.item.id] = action.item
             localStorage.setItem('cart', JSON.stringify(newCart))
             return {...state, cart: newCart}
         case "ADD_TO_CART":

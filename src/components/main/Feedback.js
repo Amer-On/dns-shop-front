@@ -3,6 +3,7 @@ import 'styles/auth.css'
 import App from "../../App";
 import axios from "axios";
 import {toast} from "react-toastify";
+import {HOST} from '../../constants'
 
 const Feedback = () => {
     function onSubmit(e) {
@@ -11,7 +12,7 @@ const Feedback = () => {
             email: e.target.email.value,
             comment: e.target.message.value
         }
-        axios.post("http://localhost:8000/api/v1/feedbacks", data).then(
+        axios.post(HOST + "/api/v1/feedbacks", data).then(
             (response) => {
                 if (response.status === 200) {
                     toast.success('Обратная связь оставлена!')

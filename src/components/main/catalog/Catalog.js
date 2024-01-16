@@ -6,6 +6,7 @@ import App from "../../../App";
 import Navigation from "../home/Navigation";
 import axios from "axios";
 import {useParams} from "react-router-dom";
+import {HOST} from "../../../constants";
 
 const Catalog = (props) => {
     const {query} = useParams();
@@ -19,7 +20,7 @@ const Catalog = (props) => {
         } else {
             data = {category: props.cat}
         }
-        res = axios.get('http://localhost:8000/api/v1/products/', {params: data})
+        res = axios.get(HOST + '/api/v1/products/', {params: data})
         res.then(
             (r) => setCatalog(r.data)
         ).catch(
